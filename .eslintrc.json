@@ -1,3 +1,20 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "no-unused-vars": [
+    "error",
+    {
+      "vars": "local",
+      "args": "after-used",
+      "caughtErrors": "all",
+      "ignoreRestSiblings": false,
+      "reportUsedIgnorePattern": false
+    }
+  ]
 }
