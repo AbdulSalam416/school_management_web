@@ -1,4 +1,3 @@
-import { supabase } from "./lib/superbase";
 
 export default function Home() {
    return (
